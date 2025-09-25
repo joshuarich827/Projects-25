@@ -6,6 +6,7 @@ import { Navbar } from "./components/Navbar";
 import ReviewsSection from "./components/ReviewsSection";
 import Sidebar from "./components/SideBar";
 
+
 const initialBooks = [
   {
     id: 1,
@@ -26,6 +27,22 @@ const initialBooks = [
     cover:
       "https://images.unsplash.com/photo-1541963463532-d68292c34b19?auto=format&fit=crop&w=500&q=60",
   },
+  {
+    id: 3,
+    title: "Atomic habits",
+    author: "James clear",
+    rating: 5,
+    review: "Great for habit building.",
+    cover:
+      ""
+  },
+  {
+    id: 4,
+    title: "The Alchemist",
+    author: "Paulo Coehlo",
+    rating: 5,
+    review: "Inspirational story"
+  }
 ];
 
 export default function Page() {
@@ -77,8 +94,10 @@ export default function Page() {
   return (
     <>
       
-      <div className="grid grid-cols-3 gap-8">
-        <Sidebar books={books} onAddBook={handleAddBook} />
+      <div className="flex flex-col items-center gap-2">
+
+        
+        
         <ReviewsSection
           books={filteredBooks}
           searchTerm={searchTerm}

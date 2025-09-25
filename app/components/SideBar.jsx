@@ -23,7 +23,7 @@ export default function Sidebar({ books, onAddBook }) {
           <strong>{books.filter((b) => b.rating === 5).length}</strong>
         </div>
       </div>
-      <button onClick={onAddBook}>
+      <button className=" br-3 cursor-pointer bold white bg-bue-300" onClick={onAddBook}>
         <i className="fas fa-plus"></i> Add New Review
       </button>
     </div>
