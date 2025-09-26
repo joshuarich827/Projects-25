@@ -10,7 +10,7 @@ export const Navbar = () => {
       <div className='flex flex-col md:flex-row items-center justify-between mt-2 md:mt-0'>
         <Link to="/" className='hover:underline'>Home</Link>
         <Link to="/" className='hover:underline'>Favorites</Link>
-        <Link to="/" className='hover:underline'>Profile</Link>
+        <Link to="/auth/sigin" className='hover:underline'>signin</Link>
 
         <Link to="/add" className='hover:underline'>Add your Reviews</Link>
       
